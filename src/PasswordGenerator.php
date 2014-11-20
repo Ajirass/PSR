@@ -66,15 +66,16 @@ class PasswordGenerator
                 $char = self::$passwordCharEasy.self::$passwordCharMedium.self::$passwordCharHard;
         }
 
-        $length = (is_null($number))
+        $length = (null === $number)
             ? self::$passwordDefaultLength
-            : (0 === (int)$number)
+            : (0 === (int) $number)
                 ? self::$passwordDefaultLength
-                : (int)$number;
+                : (int) $number;
 
-        for($i=0; $i < $length; $i++) {
-            $password .= mb_substr($char, mt_rand(0,(mb_strlen($char)-1)), 1);
+        for($i = 0; $i < $length; $i++) {
+            $password .= mb_substr($char, mt_rand(0, (mb_strlen($char) - 1)), 1);
         }
+
         return $password;
     }
 } 
