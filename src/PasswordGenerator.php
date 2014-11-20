@@ -10,7 +10,7 @@ class PasswordGenerator
     /**
      *
      */
-    const PASSWORD_EASY = 0;
+    const PASSWORD_EASY   = 0;
     /**
      *
      */
@@ -18,7 +18,7 @@ class PasswordGenerator
     /**
      *
      */
-    const PASSWORD_HARD = 3;
+    const PASSWORD_HARD   = 3;
 
     /**
      * @var string
@@ -78,4 +78,4 @@ class PasswordGenerator
 
         return $password;
     }
-} 
+}
