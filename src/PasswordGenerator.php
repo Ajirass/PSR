@@ -7,17 +7,9 @@ namespace Web1\StringGenerator;
  */
 class PasswordGenerator
 {
-    /**
-     *
-     */
+
     const PASSWORD_EASY   = 0;
-    /**
-     *
-     */
     const PASSWORD_MEDIUM = 1;
-    /**
-     *
-     */
     const PASSWORD_HARD   = 3;
 
     /**
