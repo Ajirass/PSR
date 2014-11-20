@@ -10,32 +10,32 @@ class PasswordGenerator
 	/**
 	 *
 	 */
-	const PASSWORD_EASY     = 0;
+	const PASSWORD_EASY = 0;
 	/**
 	 *
 	 */
-	const PASSWORD_MEDIUM   = 1;
+	const PASSWORD_MEDIUM = 1;
 	/**
 	 *
 	 */
-	const PASSWORD_HARD     = 3;
+	const PASSWORD_HARD = 3;
 
 	/**
 	 * @var string
 	 */
-	private static $passwordCharEasy        = 'abcdefghijklmnopqrstuvwxyz';
+	private static $passwordCharEasy = 'abcdefghijklmnopqrstuvwxyz';
 	/**
 	 * @var string
 	 */
-	private static $passwordCharMedium      = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+	private static $passwordCharMedium = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 	/**
 	 * @var string
 	 */
-	private static $passwordCharHard        = '#!$&£%*;?@';
+	private static $passwordCharHard = '#!$&£%*;?@';
 	/**
 	 * @var int
 	 */
-	private static $passwordDefaultLength   = 10;
+	private static $passwordDefaultLength = 10;
 
 	/**
 	 * @param null $number
@@ -46,7 +46,7 @@ class PasswordGenerator
 	 */
 	public static function generateCharacter($number = null, $strength = self::PASSWORD_MEDIUM)
 	{
-		if (!in_array($strength, [
+		if (false === in_array($strength, [
 			self::PASSWORD_EASY,
 			self::PASSWORD_MEDIUM,
 			self::PASSWORD_HARD,
